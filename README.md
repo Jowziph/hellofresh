@@ -19,7 +19,9 @@ unit tests for Coords and Temperature classes.
 # config.ini
 define number of records to process from Boxes.csv
 
-run main.py to produce the output required, and test.py to for unit tests.
+# run
+docker build --tag python-docker .
+docker run -v %cd%:/app python-docker 
 
 # further notes
 - I investigated a few geospatial libraries for finding coordinates from postcodes.

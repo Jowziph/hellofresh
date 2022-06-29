@@ -21,6 +21,7 @@ define number of records to process from Boxes.csv
 
 # run
 docker build --tag python-docker .
+
 docker run -v %cd%:/app python-docker 
 
 # further notes

@@ -18,7 +18,6 @@ def main():
     boxes_df = boxes_df.head(maxRecords)
 
 
-    boxes_df['temp'] = boxes_df.apply(lambda x: Coords(x.postcode).getLatLong(), axis=1)
     #find temp at that location on that day
     boxes_df['temp'] = boxes_df.apply(lambda x: Temperature(x.postcode,x.delivery_date).getTemp(), axis=1)
     boxes_df = boxes_df[["box_id","Box Size","temp"]]

@@ -16,6 +16,9 @@ and then loads to output.csv.
 # test.py
 unit tests for Coords and Temperature classes.
 
+# config.ini
+define number of records to process from Boxes.csv
+
 run main.py to produce the output required, and test.py to for unit tests.
 
 # further notes
@@ -26,3 +29,5 @@ run main.py to produce the output required, and test.py to for unit tests.
   This impacts locations which are very remote (e.g. the Gurnsey postcode)
 - Temperature is based on the average temperature of that day. But meal boxes are most
   likely not delivered at night. A more accurate temperature estimate could be made here.
+- Due to concerns with run time (due to usage of meteostat and pgeocode) I added a config
+  to limit the total number of records from Boxes.csv being processed.

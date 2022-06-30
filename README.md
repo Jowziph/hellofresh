@@ -19,7 +19,7 @@ unit tests for Coords and Temperature classes.
 # config.ini
 define number of records to process from Boxes.csv
 
-# run
+# run (windows)
 docker build --tag python-docker .
 
 docker run -v %cd%:/app python-docker 

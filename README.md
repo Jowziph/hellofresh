@@ -34,3 +34,6 @@ docker run -v %cd%:/app python-docker
   likely not delivered at night. A more accurate temperature estimate could be made here.
 - Due to concerns with run time (due to usage of meteostat and pgeocode) I added a config
   to limit the total number of records from Boxes.csv being processed.
+- I was unsure whether to use "Cool Pouch" Size" or	"Box Size" from Boxes.csv. I decided
+  it didn't matter too much for the sake of the exercise.
+
